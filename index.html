@@ -2,56 +2,107 @@
 <html lang="fi">
 <head>
     <meta charset='utf-8'>
-    <title>Page Title</title>
+    <title>Nicodemos Tajakka</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-        body {
+        /*Tyylit*/
+        body
+        {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
+        header
+        {
+            background-color: #5f5f5f;
             color: white;
-            padding: 10px 0;
+            padding: 40px 20px;
             text-align: center;
         }
-        section {
-            margin: 20px;
+        nav
+        {
+            margin-top: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a
+        {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover
+        {
+            text-decoration: underline;
+        }
+        section
+        {
+            text-align: left;
+            margin: 40px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
             padding: 20px;
-            background-color: white;
-            border-radius: 5px;
+            background: white;
         }
-        h2 {
-            color: #333;
+        img
+        {
+            max-width: 300px;
+            max-height: 300px;
+            border: 5px solid white;
+            object-fit: cover;
+            margin: 20px;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
+
     </style>
 </head>
 <body>
     <header>
-
+        <!--Otsikot-->
+        <h1>Nicodemos Tajakka</h1>
+        <p>Ohjelmistokehittäjä | Opiskelija | Indie pelikehittäjä</p>
+        <nav>
+            <!--navigointi #koulutus hypätään kohtaan koulutus samalla sivulla-->
+            <a href="#mina">Tietoa minusta</a>
+            <a href="#Koulutus">Koulutus</a>
+            <a href="#Tyokokemus">Työkokemus</a>
+            <a href="#Taidot">Taidot</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#yhteystiedot">Yhteystiedot</a>
+        </nav>
     </header>
-    <section>
+    <section class="mina">
+        <img src="kuva3.jpg" alt="Hertta & mä">
+        <div class="mina-text">
+            <!--Tietoa minusta-->
+            <h2>Tietoa minusta</h2>
+            <p>Olen 23 vuotias miehen alku joka tykkää videopeleistä ja elokuvista.
+               Alkujaan Kouvolan maaseudulta nykyisin, Kuopiossa kahden kissan ja avopuolison kanssa.
+            </p>
+        </div>
+    </section>
+
+    <section id="Koulutus">
+        <!--Koulutus-->
         <h2>Koulutus</h2>
         <ul>
-            <li>Ylioppilastutkinto, 2020</li>
+            <li><strong>Ylioppilastutkinto, Loviisan Lukio:</strong> 2017 - 2020</li>
+            <li><strong>Tieto- ja viestintätekniikan perustutkinto, Ohjelmistokehittäjä, SAKKY Kuopio:</strong> 2024 -</li>
         </ul>
     </section>
-    <section>
+
+    <section id="Tyokokemus">
+        <!--Työkokemus-->
         <h2>Työkokemus</h2>
         <ul>
-            <li>Vaihetyöntekijä, 2021-2022</li>
+            <li><strong>Vaihetyöntekijä</strong>, 2021-2022</li>
         </ul>
     </section>
-    <section>
+
+    <section id="Taidot">
+        <!--Taidot-->
         <h2>Taidot</h2>
         <ul>
             <li>Pelikehitys</li>
@@ -59,6 +110,17 @@
             <li>3D-mallinnus</li>
             <li>Piirtäminen</li>
         </ul>
+    </section>
+    <section id="portfolio">
+        <h3>Portfolio</h3>
+        <p>linkki ja/tai kuvia</p>
+        <img src="kuva1.jpg" alt="Hertta">
+        <img src="kuva2.jpg" alt="Hugo">
+    </section>
+
+    <section id="yhteystiedot">
+        <h3>Yhteystiedot</h3>
+        <p>etunimi.sukunimi@sposti.com | puhelinnumero | sosiaalinenmedia</p>
     </section>
 </body>
 </html>
