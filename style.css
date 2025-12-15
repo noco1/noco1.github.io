@@ -55,6 +55,8 @@ img[alt="hertta_mina"], img[alt="hugo"], img[alt="hertta"]
   margin: auto;
 }
 
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+
 /* Next & previous buttons */
 .prev, .next 
 {
@@ -71,7 +73,9 @@ img[alt="hertta_mina"], img[alt="hugo"], img[alt="hertta"]
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-img[alt="quiz3"], img[alt="quiz2"], img[alt="quiz1"], img[alt="wa1"], img[alt="wa2"], img[alt="wa3"]  
+img[alt="quiz3"], img[alt="quiz2"], img[alt="quiz1"], 
+img[alt="wa1"], img[alt="wa2"], img[alt="wa3"], 
+img[alt="ps1"], img[alt="ps2"], img[alt="ps3"], img[alt="ps4"], img[alt="ps_db"]
 {
     width: 100%;
     height: auto;
