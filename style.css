@@ -3,7 +3,7 @@ body
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #5f5f5f;
 }
 header
 {
@@ -37,7 +37,7 @@ section
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
     padding: 20px;
-    background: white;
+    background: rgb(255, 255, 255);
 }
 img[alt="hertta_mina"], img[alt="hugo"], img[alt="hertta"]
 {
@@ -98,10 +98,10 @@ img[alt="ps1"], img[alt="ps2"], img[alt="ps3"], img[alt="ps4"], img[alt="ps_db"]
 .text 
 {
     color: #000000;
-    background-color: #ffffff6f;
+    background-color: #ffffff9d;
     font-size: 15px;
-    padding: 8px 12px;
-    bottom: 8px;
+    padding: 8px;
+    bottom: 2px;
     position: absolute;
     width: 100%;
     text-align: center;
