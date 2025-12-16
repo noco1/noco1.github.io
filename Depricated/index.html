@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset='utf-8'>
+    <title>Nicodemos Tajakka</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <!--Otsikot-->
+        <h1>Nicodemos Tajakka</h1>
+        <p>Ohjelmistokehittäjä | Opiskelija | Indie pelikehittäjä</p>
+        <nav>
+            <!--navigointi #koulutus hypätään kohtaan koulutus samalla sivulla-->
+            <a href="#mina">Tietoa minusta</a>
+            <a href="#Koulutus">Koulutus</a>
+            <a href="#Tyokokemus">Työkokemus</a>
+            <a href="#Taidot">Taidot</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#yhteystiedot">Yhteystiedot</a>
+        </nav>
+    </header>
+    <section class="mina">
+        <img src="kuva3.jpg" alt="hertta_mina">
+        <div class="mina-text">
+            <!--Tietoa minusta-->
+            <h2>Tietoa minusta</h2>
+            <p>Olen 24-vuotias miehen alku, joka tykkää videopeleistä, elokuvista ja sarjoista.
+               Alkujaan Kouvolan maaseudulta, nykyisin Kuopiossa kahden kissan ja avopuolison kanssa.
+               Vapaa-aika kuluu pelaten, pelejä tehden, kuntoillen ja kokkaillen. Minua kiinnostaa erityisesti pelikehitys ja seuraan aktiivisesti teknologia-alan uutisia ja trendejä.
+               Hamstraan kaikkea hyödyllistä kuin hyödyntöntäkin tietoa ja pyrin jatkuvasti kehittämään itseäni ja osaamistani niin ammatillisesti kuin henkilökohtaisestikin.
+            </p>
+        </div>
+        <p>Tässä ovat kissamme Hertta ja Hugo:</p>
+        <img src="kuva1.jpg" alt="hertta">
+        <img src="kuva2.jpg" alt="hugo">
+    </section>
+
+    <section id="Koulutus">
+        <!--Koulutus-->
+        <h2>Koulutus</h2>
+        <ul>
+            <li><strong>Ylioppilastutkinto, Loviisan Lukio:</strong> 2017 - 2020</li>
+            <li><strong>Tieto- ja viestintätekniikan perustutkinto, Ohjelmistokehittäjä, SAKKY Kuopio:</strong> 2024 -</li>
+            <li><strong>Avoimen opinnot, Savonia-ammattikorkeakoulu:</strong> 2025
+                <ul>
+                    <li>Python-ohjelmointi arvosana: 5</li>
+                    <li>Python-jatkokurssi arvosana: 5</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="Tyokokemus">
+        <!--Työkokemus-->
+        <h2>Työkokemus</h2>
+        <ul>
+            <li><strong>Vaihetyöntekijä</strong>, 2021-2022</li>
+            <li><strong>Porrassiivooja</strong>, Kesäkuu-Heinäkuu, 2025</li>
+        </ul>
+    </section>
+
+    <section id="Taidot">
+        <!--Taidot-->
+        <h2>Taidot</h2>
+        <ul>
+            <li><strong>Ohjelmointi:</strong>
+                <ul>
+                    <li>C#, SQL, CSS, JavaScript, PHP, HTML, Python(alkeet), PowerShell(alkeet)</li>
+                </ul>
+            </li>
+            <li><strong>Pelikehitys:</strong>
+                <ul>
+                    <li>Godot</li>
+                    <li>Unreal Engine 5</li>
+                </ul>
+            </li>
+            <li><strong>3D-mallinnus:</strong>
+                <ul>
+                    <li>Blender</li>
+                </ul>
+            </li>
+            <li><strong>Ohjelmistot</strong></li>
+                <ul>
+                    <li>GitHub</li>
+                    <li>Visual Studio: Code, 2019</li>
+                </ul>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p><strong>WIP-kysymyspeliprojekti:</strong></p>
+        <p>Roolini: fullstack-kehittäjä</p>
+        <p>Aika: käynnissä oleva projekti</p><br>
+        <p>
+            Tehtävänä on tehdä TEO-jaksolle ennakkopeli jolla varmistetaan, että opiskelija hallitsee keskeiset asiat ennen TEO-jaksoa.
+            Teen projektia yksin itsenäisesti joten toimin fullstack-kehittäjänä. Kuvia ja tietoja tulee lisää projektin edetessä.
+        </p>
+        <p>
+            Linkki projektiin GitHubissa: <a href="https://github.com/noco1/quiz_game.git">https://github.com/noco1/quiz_game.git</a>
+        </p>
+        <div class="slideshow-container">
+            <div class="mySlides1">
+                <img src="quiz3.png" alt="quiz3">
+                <div class="text">Etusivu ja valikko</div>
+            </div>
+            <div class="mySlides1">
+                <img src="quiz2.png" alt="quiz2">
+                <div class="text">Opettajan rekisteröityminen ja kirjautuminen</div>
+            </div>
+            <div class="mySlides1">
+                <img src="quiz1.png" alt="quiz1">
+                <div class="text">Opettajan hallintapaneeli</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <p><strong>Weather App:</strong></p>
+        <p>Roolini: backend-kehittäjä</p>
+        <p>Aika: 5 päivää</p><br>
+        <p>
+            Tehtävänä oli suunnitella, toteuttaa ja dokumentoida sääpalvelu joka näyttää käyttäjälle Kuopion alueen säätiedot tietyltä ajalta. 
+            Tehtävä oli vuoden 2023 Taitaja-kilpailujen semifiinali tehtävä ja ryhmätyö.
+        </p>
+        <p>
+            Tein projektin toisen opiskelijan kanssa parina.
+            Projektissa päätehtäväni olivat backend, suunnittelu ja dokumentointi, mutta tein myös frontendiä jonkin verran, sekä integroin ne toisiinsa ja testasin.
+        </p>
+        <p>
+            Linkki projektiin GitHubissa: <a href="https://github.com/noco1/Taitaja_2023_semifinaalitehtava.git">https://github.com/noco1/Taitaja_2023_semifinaalitehtava.git</a>
+        </p>
+        <div class="slideshow-container">
+            <div class="mySlides2">
+                <img src="wa1.png" alt="wa1">
+                <div class="text">Etusivu</div>
+            </div>
+            <div class="mySlides2">
+                <img src="wa2.png" alt="wa2">
+                <div class="text">Kirjautuminen</div>
+            </div>
+            <div class="mySlides2">
+                <img src="wa3.png" alt="wa3">
+                <div class="text">Sääsivu</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+
+        <p><strong>PhoneShop:</strong></p>
+        <p>Roolini: backend-kehittäjä</p>
+        <p>Aika: 5 päivää</p><br>
+        <p>
+            Tehtävänä oli tehdä yksinkertainen puhelin- ja puhelintarvikekauppa, jossa käyttäjä voi kirjautua, selata tuotteita, lisätä niitä ostoskoriin, tehdä tilauksen sekä tarkastella tilaushistoriaansa.
+            Projektissa käytin liian paljon aikaa backend osuuteen ja aika loppui kesken, joten ulkoasu on hyvin simppeli. Jatkoa ajatellen olisin halunnut hakea tuottetiedot ja kuvat suoraan ulkoisesta API-rajapinnasta. 
+        </p>
+        <div class="slideshow-container">
+            <div class="mySlides3">
+                <img src="ps1.png" alt="ps1">
+                <div class="text">Etusivu</div>
+            </div>
+            <div class="mySlides3">
+                <img src="ps2.png" alt="ps2">
+                <div class="text">Rekisteröityminen</div>
+            </div>
+            <div class="mySlides3">
+                <img src="ps3.png" alt="ps3">
+                <div class="text">Kirjautuminen</div>
+            </div>
+            <div class="mySlides3">
+                <img src="ps4.png" alt="ps4">
+                <div class="text">Ostoskori</div>
+            </div>
+            <div class="mySlides3">
+                <img src="ps_db.png" alt="ps_db">
+                <div class="text">Tietokanta rakenne</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+    </section>
+
+    <section id="yhteystiedot">
+        <!--Yhteystiedot-->
+        <h3>Yhteystiedot</h3>
+        <p>nicodemos.tajakka@gmail.com | 0458668830 | LinkedIn: Nicodemos Tajakka</p>
+    </section>
+</body>
+</html>
