@@ -247,6 +247,7 @@ section li + li {
 
 .slideshow-container {
     position: relative;
+    width: 100%;
     max-width: 1000px;
     margin: 24px auto 28px;
     overflow: hidden;
@@ -259,14 +260,17 @@ section li + li {
 .mySlides2,
 .mySlides3 {
     display: none;
+    width: 100%;
+    min-width: 0;
 }
 
 .mySlides1 img,
 .mySlides2 img,
 .mySlides3 img {
     width: 100%;
-    height: clamp(280px, 44vw, 520px);
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
     display: block;
 }
 
@@ -522,6 +526,11 @@ section li + li {
 
     section {
         padding: 22px 18px 18px;
+        overflow: hidden;
+    }
+
+    #portfolio a {
+        overflow-wrap: anywhere;
     }
 
     .mina {
